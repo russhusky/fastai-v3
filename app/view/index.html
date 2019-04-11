@@ -1,19 +1,24 @@
 <html lang='en'>
 <head>
     <meta charset='utf-8'>
-    <link rel='stylesheet' href='../static/style.css'>
-    <script src='../static/client.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Lato" rel="stylesheet">
+    <link href="../static/style/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <title>CC Communications Machine Learning - Image Classifier</title>
 </head>
 <body>
-<div>
-    <div class='center'>
-        <p><img src="https://screwed.onrender.com/static/CCCLogo.jpg"></p>
-        <div class='title'><b>Fastener</b> <br />Machine Learning Classifier</div>
-        <p> 
-            Use an image of a <br /> <strong>Wood Screw (brass)</strong>, <strong>Wood Screw (not brass)</strong>, or <strong>Machine Screw</strong>
-        </p>
-        <div class='content'>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 header center">
+          <p style="padding-top:10rem;"><img class="py-2" src="../static/CCCLogo.jpg"></p>
+          <div class='title center'>SCREW CLASSIFIER</div>
+          <p>
+            Use an image of a Wood Screw (brass), Wood Screw (not brass), or Machine Screw
+          </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 text-center">
             <div class='no-display'>
                 <input id='file-input'
                        class='no-display'
@@ -22,21 +27,40 @@
                        accept='image/*'
                        onchange='showPicked(this)'>
             </div>
-            <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+      </div>
+  </div>
+    <div class="container" style="padding-bottom: 2rem;">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <div class='result-label'>
+              <label id='result-label' style="font-weight:700; font-size: 2rem; padding:2rem;"></label>
+          </div>
+        </div>
+        <div class="col-md-6 text-center" style="padding-bottom: 2rem;">
+          <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+        </div>
+        <div class="col-md-6 text-center" style="padding-bottom: 2rem;">
+          <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="col-md-12 text-center">
+            <img id='image-picked' class='no-display' alt='Chosen Image' style='width:100%; height:auto;'>
             <div class='upload-label'>
                 <label id='upload-label'>No file chosen</label>
             </div>
-            <div>
-                <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
-            </div>
-            <div class='analyze'>
-                <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
-            </div>
-            <div class='result-label'>
-                <label id='result-label'></label>
-            </div>
-        </div>
+      </div>
     </div>
-</div>
+
+        </div>
+          <div class="col-md-12 footer">
+          </div>
+      </div>
+    </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src='../static/client.js'></script>
 </html>

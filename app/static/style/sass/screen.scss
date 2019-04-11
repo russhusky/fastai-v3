@@ -1,0 +1,138 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import 'global.scss';
+
+$wht: #fff;
+$red: #ba2028;
+
+@mixin oswald {
+  font-family: 'Oswald', sans-serif !important;
+}
+@mixin lato {
+  font-family: 'Lato', sans-serif;
+}
+
+
+body {
+    background-color: $wht;
+    @include lato;
+    overflow-x:hidden;
+}
+
+.header {
+  background: url("../../fastnerexample-top.png") no-repeat top right;
+  background-size:50%;
+}
+
+.footer {
+  background: url("../../fastnerexample-bottom.png") no-repeat bottom left;
+  background-size:50%;
+  bottom: 0;
+  @include xxlg {
+      height:21rem;
+  }
+  @include xlg {
+      height:21rem;
+  }
+
+  @include lg {
+      height:19rem;
+  }
+
+  @include med {
+      height:19rem;
+  }
+  @include sm {
+      height:14rem;
+  }
+  @include x-sm {
+      height:10.2rem;
+  }
+  @include xx-sm {
+      height:14.3rem;
+  }
+}
+
+.placeholder {
+  background-color:red;
+  width:100%;
+  padding: 10rem;
+}
+
+.col-md-12, .container-fluid {
+  padding-left: 0px;
+  padding-right:0px;
+}
+
+.no-display {
+    display: none;
+}
+
+.center {
+    margin: auto;
+    padding: 10px;
+    padding-left:50px;
+    padding-right:50px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.title {
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #262626;
+    @include oswald;
+}
+
+.content {
+    margin-top: 10em;
+}
+
+.analyze {
+    margin-top: 2rem;
+}
+
+.upload-label {
+    padding: 10px;
+    font-size: 12px;
+}
+
+.result-label {
+    margin-top: 0.5em;
+    padding: 10px;
+    font-size: 13px;
+}
+
+button {
+  color:$red !important;
+  font-weight:700;
+}
+
+button.choose-file-button {
+  width: 80%;
+  height: 3rem;
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: solid 1px $red;;
+  font-size: 13px;
+  color: $red;
+}
+
+button.analyze-button {
+    width: 80%;
+    height: 3rem;
+    border: solid 1px $red;
+    border-radius: 2px;
+    background-color: $red;
+    font-size: 13px;
+    color: #ffffff !important;
+    font-weight: 700;
+}
+
+button:focus {outline:0;}
