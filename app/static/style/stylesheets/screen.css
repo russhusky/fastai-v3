@@ -984,73 +984,24 @@ body {
 }
 
 /* line 31, ../sass/screen.scss */
-.footer {
-  background: url("../../fastnerexample-bottom.png") no-repeat bottom left;
-  background-size: 50%;
-  bottom: 0;
-}
-@media (min-width: 1450px) and (max-width: 2048px) {
-  /* line 31, ../sass/screen.scss */
-  .footer {
-    height: 21rem;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1449.98px) {
-  /* line 31, ../sass/screen.scss */
-  .footer {
-    height: 21rem;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  /* line 31, ../sass/screen.scss */
-  .footer {
-    height: 19rem;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  /* line 31, ../sass/screen.scss */
-  .footer {
-    height: 19rem;
-  }
-}
-@media (min-width: 576px) and (max-width: 767.98px) {
-  /* line 31, ../sass/screen.scss */
-  .footer {
-    height: 14rem;
-  }
-}
-@media (max-width: 575.98px) and (min-width: 375px) {
-  /* line 31, ../sass/screen.scss */
-  .footer {
-    height: 10.2rem;
-  }
-}
-@media (max-width: 374.98px) and (min-width: 320px) {
-  /* line 31, ../sass/screen.scss */
-  .footer {
-    height: 14.3rem;
-  }
-}
-
-/* line 60, ../sass/screen.scss */
 .placeholder {
   background-color: red;
   width: 100%;
   padding: 10rem;
 }
 
-/* line 66, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 .col-md-12, .container-fluid {
   padding-left: 0px;
   padding-right: 0px;
 }
 
-/* line 71, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 .no-display {
   display: none;
 }
 
-/* line 75, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 .center {
   margin: auto;
   padding: 10px;
@@ -1060,7 +1011,7 @@ body {
   font-size: 14px;
 }
 
-/* line 84, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 .title {
   font-size: 3rem;
   margin-top: 1rem;
@@ -1070,36 +1021,36 @@ body {
   font-family: 'Oswald', sans-serif !important;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 .content {
   margin-top: 10em;
 }
 
-/* line 97, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 .analyze {
   margin-top: 2rem;
 }
 
-/* line 101, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 .upload-label {
   padding: 10px;
   font-size: 12px;
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 .result-label {
   margin-top: 0.5em;
   padding: 10px;
   font-size: 13px;
 }
 
-/* line 112, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 button {
   color: #ba2028 !important;
   font-weight: 700;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 button.choose-file-button {
   width: 80%;
   height: 3rem;
@@ -1110,7 +1061,7 @@ button.choose-file-button {
   color: #ba2028;
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 button.analyze-button {
   width: 80%;
   height: 3rem;
@@ -1122,7 +1073,7 @@ button.analyze-button {
   font-weight: 700;
 }
 
-/* line 138, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 button:focus {
   outline: 0;
 }
