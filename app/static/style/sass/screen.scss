@@ -23,9 +23,25 @@ body {
     overflow-x:hidden;
 }
 
+p {
+  line-height: 1.2;
+}
+
 .header {
   background: url("../../fastnerexample-top.png") no-repeat top right;
-  background-size:50%;
+  background-size:40%;
+  @include med {
+  background-size:60%;
+  }
+  @include sm {
+    background-size:60%;
+  }
+  @include x-sm {
+    background-size:60%;
+  }
+  @include xx-sm {
+    background-size:60%;
+  }
 }
 
 .placeholder {
@@ -53,12 +69,13 @@ body {
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-weight: 700;
     color: #262626;
     @include oswald;
+    line-height: 1.2;
 }
 
 .content {
@@ -86,17 +103,27 @@ button {
 }
 
 button.choose-file-button {
-  width: 80%;
+  width: 30%;
   height: 3rem;
   border-radius: 2px;
   background-color: #ffffff;
   border: solid 1px $red;;
   font-size: 13px;
   color: $red;
+
+  @include sm {
+    width: 80%;
+  }
+  @include x-sm {
+    width: 80%;
+  }
+  @include xx-sm {
+    width: 80%;
+  }
 }
 
 button.analyze-button {
-    width: 80%;
+    width: 30%;
     height: 3rem;
     border: solid 1px $red;
     border-radius: 2px;
@@ -104,6 +131,16 @@ button.analyze-button {
     font-size: 13px;
     color: #ffffff !important;
     font-weight: 700;
+
+    @include sm {
+      width: 80%;
+    }
+    @include x-sm {
+      width: 80%;
+    }
+    @include xx-sm {
+      width: 80%;
+    }
 }
 
 button:focus {outline:0;}
