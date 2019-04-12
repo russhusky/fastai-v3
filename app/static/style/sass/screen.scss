@@ -92,9 +92,21 @@ p {
 }
 
 .result-label {
-    margin-top: 0.5em;
-    padding: 10px;
     font-size: 13px;
+}
+
+.mobile {
+  width: 50%;
+  height: auto;
+  @include sm {
+    width: 80%;
+  }
+  @include x-sm {
+    width: 80%;
+  }
+  @include xx-sm {
+    width: 80%;
+  }
 }
 
 button {
