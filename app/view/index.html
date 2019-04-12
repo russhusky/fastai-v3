@@ -11,7 +11,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12 header center">
-          <p style="padding-top:10rem;"><img class="py-2" src="../static/CCCLogo.jpg"></p>
+          <p style="padding-top:3rem;"><img class="py-2" src="../static/CCCLogo.jpg"></p>
           <div class='title center'>SCREW CLASSIFIER</div>
           <p style=>
             Use an image of a Wood Screw (brass), Wood Screw (not brass), or Machine Screw
@@ -37,23 +37,20 @@
               <label id='result-label' style="font-weight:700; font-size: 2rem; padding:2rem;"></label>
           </div>
         </div>
-        <div class="col-md-6 text-center" style="padding-bottom: 2rem;">
-          <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
-        </div>
-        <div class="col-md-6 text-center" style="padding-bottom: 2rem;">
+        <div class="col-md-12 text-center" style="padding-bottom: 2rem;">
           <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
         </div>
+        <div class="col-md-12 text-center">
+              <img id='image-picked' class='no-display' alt='Chosen Image' style='width:50%; height:auto;'>
+              <div class='upload-label'>
+                  <label id='upload-label'>No file chosen</label>
+              </div>
+        </div>
+        <div class="col-md-12 text-center" style="padding-bottom: 2rem;">
+          <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+        </div>
       </div>
     </div>
-    <div class="container-fluid">
-      <div class="col-md-12 text-center">
-            <img id='image-picked' class='no-display' alt='Chosen Image' style='width:80%; height:auto;'>
-            <div class='upload-label'>
-                <label id='upload-label'>No file chosen</label>
-            </div>
-      </div>
-    </div>
-
         </div>
       </div>
     </div>

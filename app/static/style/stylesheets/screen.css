@@ -978,30 +978,59 @@ body {
 }
 
 /* line 26, ../sass/screen.scss */
-.header {
-  background: url("../../fastnerexample-top.png") no-repeat top right;
-  background-size: 50%;
+p {
+  line-height: 1.2;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
+.header {
+  background: url("../../fastnerexample-top.png") no-repeat top right;
+  background-size: 40%;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* line 30, ../sass/screen.scss */
+  .header {
+    background-size: 60%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* line 30, ../sass/screen.scss */
+  .header {
+    background-size: 60%;
+  }
+}
+@media (max-width: 575.98px) and (min-width: 375px) {
+  /* line 30, ../sass/screen.scss */
+  .header {
+    background-size: 60%;
+  }
+}
+@media (max-width: 374.98px) and (min-width: 320px) {
+  /* line 30, ../sass/screen.scss */
+  .header {
+    background-size: 60%;
+  }
+}
+
+/* line 47, ../sass/screen.scss */
 .placeholder {
   background-color: red;
   width: 100%;
   padding: 10rem;
 }
 
-/* line 37, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 .col-md-12, .container-fluid {
   padding-left: 0px;
   padding-right: 0px;
 }
 
-/* line 42, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 .no-display {
   display: none;
 }
 
-/* line 46, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 .center {
   margin: auto;
   padding: 10px;
@@ -1011,48 +1040,49 @@ body {
   font-size: 14px;
 }
 
-/* line 55, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 .title {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-weight: 700;
   color: #262626;
   font-family: 'Oswald', sans-serif !important;
+  line-height: 1.2;
 }
 
-/* line 64, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 .content {
   margin-top: 10em;
 }
 
-/* line 68, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 .analyze {
   margin-top: 2rem;
 }
 
-/* line 72, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 .upload-label {
   padding: 10px;
   font-size: 12px;
 }
 
-/* line 77, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .result-label {
   margin-top: 0.5em;
   padding: 10px;
   font-size: 13px;
 }
 
-/* line 83, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 button {
   color: #ba2028 !important;
   font-weight: 700;
 }
 
-/* line 88, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 button.choose-file-button {
-  width: 80%;
+  width: 30%;
   height: 3rem;
   border-radius: 2px;
   background-color: #ffffff;
@@ -1060,10 +1090,28 @@ button.choose-file-button {
   font-size: 13px;
   color: #ba2028;
 }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* line 105, ../sass/screen.scss */
+  button.choose-file-button {
+    width: 80%;
+  }
+}
+@media (max-width: 575.98px) and (min-width: 375px) {
+  /* line 105, ../sass/screen.scss */
+  button.choose-file-button {
+    width: 80%;
+  }
+}
+@media (max-width: 374.98px) and (min-width: 320px) {
+  /* line 105, ../sass/screen.scss */
+  button.choose-file-button {
+    width: 80%;
+  }
+}
 
-/* line 98, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 button.analyze-button {
-  width: 80%;
+  width: 30%;
   height: 3rem;
   border: solid 1px #ba2028;
   border-radius: 2px;
@@ -1072,8 +1120,26 @@ button.analyze-button {
   color: #ffffff !important;
   font-weight: 700;
 }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* line 125, ../sass/screen.scss */
+  button.analyze-button {
+    width: 80%;
+  }
+}
+@media (max-width: 575.98px) and (min-width: 375px) {
+  /* line 125, ../sass/screen.scss */
+  button.analyze-button {
+    width: 80%;
+  }
+}
+@media (max-width: 374.98px) and (min-width: 320px) {
+  /* line 125, ../sass/screen.scss */
+  button.analyze-button {
+    width: 80%;
+  }
+}
 
-/* line 109, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 button:focus {
   outline: 0;
 }
