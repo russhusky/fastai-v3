@@ -28,35 +28,6 @@ body {
   background-size:50%;
 }
 
-.footer {
-  background: url("../../fastnerexample-bottom.png") no-repeat bottom left;
-  background-size:50%;
-  bottom: 0;
-  @include xxlg {
-      height:21rem;
-  }
-  @include xlg {
-      height:21rem;
-  }
-
-  @include lg {
-      height:19rem;
-  }
-
-  @include med {
-      height:19rem;
-  }
-  @include sm {
-      height:14rem;
-  }
-  @include x-sm {
-      height:10.2rem;
-  }
-  @include xx-sm {
-      height:14.3rem;
-  }
-}
-
 .placeholder {
   background-color:red;
   width:100%;
